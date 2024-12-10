@@ -23,6 +23,25 @@
                     black 10%,
                     black 90%,
                     transparent);
+            overflow-x: hidden;
+            padding: 1rem 0;
+        }
+
+        .carousel-container > div {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+
+        .carousel-container > div::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                margin: 0 -1rem;
+                padding: 1rem;
+            }
         }
 
         @font-face {
@@ -120,6 +139,11 @@
         input,
         textarea {
             font-family: 'Visby Round CF', sans-serif !important;
+        }
+
+        .carousel-container {
+            overflow-x: hidden;
+            padding: 1rem 0;
         }
 
         /* Add responsive styles */

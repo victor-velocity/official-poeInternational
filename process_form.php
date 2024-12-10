@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
 
     // Email recipient
-    $to = "your-email@example.com"; // Replace with your email
+    $to = "info@poeinternational.com"; // Replace with your email
     
     // Email subject
     $subject = "New Consultation Request from $name";

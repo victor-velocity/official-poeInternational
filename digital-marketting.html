@@ -15,22 +15,22 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:url" content="https://poeinternational.com/">
     <meta property="og:title" content="Digital Marketing & Social Media Management Services | Poe International">
     <meta property="og:description"
         content="10x your business growth with our proven digital marketing strategies. Expert social media management, content creation, and lead generation services that deliver results.">
-    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:image" content="https://poeinternational.com/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:url" content="https://poeinternational.com/">
     <meta property="twitter:title" content="Digital Marketing & Social Media Management Services | Poe International">
     <meta property="twitter:description"
         content="10x your business growth with our proven digital marketing strategies. Expert social media management, content creation, and lead generation services that deliver results.">
-    <meta property="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="twitter:image" content="https://poeinternational.com/images/og-image.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourdomain.com/digital-marketing">
+    <link rel="canonical" href="https://poeinternational.com/digital-marketing">
 
     <!-- Existing styles and scripts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Poe International",
-      "image": "https://yourdomain.com/images/logo-pres-white.png",
+      "image": "https://poeinternational.com/images/logo-pres-white.png",
       "description": "Professional digital marketing and social media management services to help businesses grow their online presence and increase revenue.",
       "address": {
         "@type": "PostalAddress",
@@ -85,6 +85,33 @@
 
     <link rel="preload" as="image" href="images/logo-pres-white.png">
     <link rel="preload" as="font" href="[your-font-url]" crossorigin>
+
+    <style>
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 50px, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .card-animate {
+            transition: all 0.3s ease;
+        }
+
+        .card-animate.visible {
+            animation: cardEntrance 0.8s ease forwards;
+        }
+
+        .card-animate:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -93,8 +120,10 @@
             class="bg-gradient-to-br from-black via-black to-purple-800 min-h-screen flex flex-col justify-center items-center relative overflow-hidden px-4">
             <!-- Logo Section - Adjusted position and styling -->
             <div class="absolute top-8 w-full flex justify-center items-center">
-                <img src="images/logo-pres-white.png" alt="Poe International Digital Marketing Agency Logo"
-                    loading="eager" width="200" height="60">
+                <a href="index.html">
+                    <img src="images/logo-pres-white.png" alt="Poe International Digital Marketing Agency Logo"
+                        loading="eager" width="200" height="60">
+                </a>
             </div>
 
             <!-- Social Media Icons - Adjusted positions and animations -->
@@ -386,16 +415,16 @@
     <section class="relative py-20 overflow-hidden scroll-animate fade-in"
         style="background: linear-gradient(180deg, #2D1538 0%, #0F0628 100%);">
         <div class="container mx-auto px-4">
-            <h2 class="text-7xl font-light mb-16 bg-clip-text text-transparent"
+            <h2 class="text-7xl font-light mb-16 bg-clip-text text-white md:text-transparent"
                 style="background-image: linear-gradient(99.68deg, #FFEFFB 17.96%, #42285D 92.04%);">
                 How we work our magic
             </h2>
 
-            <!-- Carousel Container -->
-            <div class="carousel-container relative">
-                <div class="flex gap-6 animate-carousel">
-                    <!-- Card 1 - Content Curation -->
-                    <div class="min-w-300 bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6">
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <!-- Card 1 -->
+                    <div
+                        class="card-animate bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6 opacity-0 transform translate-y-8">
                         <h3 class="text-2xl text-white font-semibold">Content Curation</h3>
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
@@ -427,8 +456,9 @@
                         </div>
                     </div>
 
-                    <!-- Card 2 - Social Media Management -->
-                    <div class="min-w-300 bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6">
+                    <!-- Card 2 -->
+                    <div class="card-animate bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6 opacity-0 transform translate-y-8"
+                        style="animation-delay: 200ms">
                         <h3 class="text-2xl text-white font-semibold">Social Media Management</h3>
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
@@ -440,7 +470,8 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop a tailored social media strategy to amplify
+                                <p class="text-white/80 font-light">Develop a tailored social media strategy to
+                                    amplify
                                     your
                                     brand's
                                     voice and drive growth</p>
@@ -454,15 +485,17 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Execute targeted ad campaigns and growth hacks to
+                                <p class="text-white/80 font-light">Execute targeted ad campaigns and growth hacks
+                                    to
                                     boost reach,
                                     engagement, and sales</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 3 - Visual Storytelling -->
-                    <div class="min-w-300 bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6">
+                    <!-- Card 3 -->
+                    <div class="card-animate bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6 opacity-0 transform translate-y-8"
+                        style="animation-delay: 400ms">
                         <h3 class="text-2xl text-white font-semibold">Visual Storytelling</h3>
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
@@ -474,7 +507,8 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Design visually stunning graphics to captivate your
+                                <p class="text-white/80 font-light">Design visually stunning graphics to captivate
+                                    your
                                     audience
                                 </p>
                             </div>
@@ -487,14 +521,16 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Create compelling video ads that drive conversions
+                                <p class="text-white/80 font-light">Create compelling video ads that drive
+                                    conversions
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 4 - Website and Email Marketing -->
-                    <div class="min-w-300 bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6">
+                    <!-- Card 4 -->
+                    <div class="card-animate bg-purple-900/30 backdrop-blur-lg rounded-3xl p-8 space-y-6 opacity-0 transform translate-y-8"
+                        style="animation-delay: 600ms">
                         <h3 class="text-2xl text-white font-semibold">Website and Email Marketing</h3>
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
@@ -506,7 +542,8 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop and optimize your website for seamless user
+                                <p class="text-white/80 font-light">Develop and optimize your website for seamless
+                                    user
                                     experience
                                 </p>
                             </div>
@@ -519,7 +556,8 @@
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop targeted email campaigns to nurture leads
+                                <p class="text-white/80 font-light">Develop targeted email campaigns to nurture
+                                    leads
                                     and
                                     boost
                                     sales
@@ -528,20 +566,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- CTA Button -->
-            <div class="mt-12">
-                <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-                    class="px-8 py-4 bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
-                    Book a free consultation
-                </button>
+                <!-- Carousel Container -->
+
+
+                <!-- CTA Button -->
+                <div class="mt-12">
+                    <button
+                        onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                        class="px-8 py-4 bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
+                        Book a free consultation
+                    </button>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- Consultation Form Section -->
-    <section id="consultation-form scroll-animate fade-in" class="py-20 relative"
+    <section id="consultation-form" class="py-20 relative scroll-animate fade-in"
         style="background: linear-gradient(135deg, #FFF1FF 0%, #F5F8FF 100%);">
         <div class="container mx-auto px-4">
             <h2
@@ -648,6 +689,43 @@
         // Add hover animations to buttons
         document.querySelectorAll('button').forEach(button => {
             button.classList.add('transform', 'transition', 'duration-300', 'hover:scale-105');
+        });
+
+        // Enhanced Intersection Observer for cards
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+        // Observe all cards
+        document.querySelectorAll('.card-animate').forEach((card) => {
+            cardObserver.observe(card);
+        });
+
+        // Add hover effect for better interactivity
+        document.querySelectorAll('.card-animate').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icons = card.querySelectorAll('svg');
+                icons.forEach(icon => {
+                    icon.style.transform = 'scale(1.2)';
+                    icon.style.transition = 'transform 0.3s ease';
+                });
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const icons = card.querySelectorAll('svg');
+                icons.forEach(icon => {
+                    icon.style.transform = 'scale(1)';
+                });
+            });
         });
     </script>
 </body>
