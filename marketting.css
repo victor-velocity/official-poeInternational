@@ -1,0 +1,309 @@
+  @keyframes carousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .animate-carousel {
+            animation: carousel 30s linear infinite;
+        }
+
+        .carousel-container {
+            mask-image: linear-gradient(to right,
+                    transparent,
+                    black 10%,
+                    black 90%,
+                    transparent);
+            -webkit-mask-image: linear-gradient(to right,
+                    transparent,
+                    black 10%,
+                    black 90%,
+                    transparent);
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Medium.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Extralight.otf') format('opentype');
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Extralight.otf') format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Light.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Medium.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby Round CF Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Demibold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Extrabold.otf') format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Visby Round CF';
+            src: url('fonts/Visby_Round_CF/Visby\ Round\ CF\ Heavy.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        /* Apply the font globally */
+        body {
+            font-family: 'Visby Round CF', sans-serif;
+        }
+
+        /* Remove any other font-family declarations */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        button,
+        input,
+        textarea {
+            font-family: 'Visby Round CF', sans-serif !important;
+        }
+
+        /* Add responsive styles */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 4rem !important;
+            }
+
+            h2 {
+                font-size: 3.5rem !important;
+            }
+
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem !important;
+            }
+
+            h2 {
+                font-size: 2.5rem !important;
+            }
+
+            .text-2xl {
+                font-size: 1.25rem;
+            }
+
+            /* Adjust social media icons positioning */
+            .absolute.top-1\/4 {
+                top: 15%;
+                left: 5%;
+            }
+
+            .absolute.top-1\/3 {
+                top: 25%;
+                right: 5%;
+            }
+
+            .absolute.bottom-1\/4 {
+                bottom: 15%;
+                right: 10%;
+            }
+
+            /* Adjust section spacing */
+            section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            /* Make flex columns stack on mobile */
+            .flex-col-mobile {
+                flex-direction: column;
+            }
+
+            /* Adjust image containers */
+            .w-full.md\:w-1\/2 {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            /* Center align text on mobile */
+            .text-center-mobile {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem !important;
+            }
+
+            h2 {
+                font-size: 2rem !important;
+            }
+
+            /* Adjust button sizing */
+            button {
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            /* Adjust carousel */
+            .carousel-container {
+                margin-left: -1rem;
+                margin-right: -1rem;
+            }
+
+            .min-w-350 {
+                min-width: 280px;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+            animation: float 6s ease-in-out 2s infinite;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .slide-in {
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        .scale-in {
+            opacity: 0;
+            animation: scaleIn 0.5s ease-out forwards;
+        }
+
+        /* Add animation delays */
+        .delay-100 {
+            animation-delay: 100ms;
+        }
+
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .delay-300 {
+            animation-delay: 300ms;
+        }
+
+        .delay-400 {
+            animation-delay: 400ms;
+        }
+
+        .delay-500 {
+            animation-delay: 500ms;
+        }

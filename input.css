@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Middle.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.hero-background {
+    background: linear-gradient(0deg, #B003B1 0%, #B003B1 100%),
+        linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.22) 54.4%, rgba(17, 17, 17, 0.40) 100%),
+        linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.54) 54.4%, #111 100%),
+        url('images/hero.jpeg') lightgray 50% / cover no-repeat;
+    background-blend-mode: hue, multiply, multiply, normal;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.gradient-bg-1 {
+    background: linear-gradient(to right, white 16.7%, transparent 16.7%);
+}
+
+.gradient-bg-2 {
+    background: linear-gradient(to right, white 33.4%, transparent 33.4%);
+}
+
+.gradient-bg-3 {
+    background: linear-gradient(to right, white 50.1%, transparent 50.1%);
+}
+
+.gradient-bg-4 {
+    background: linear-gradient(to right, white 66.8%, transparent 66.8%);
+}
+
+.gradient-bg-5 {
+    background: linear-gradient(to right, white 83.5%, transparent 83.5%);
+}
+
+.gradient-bg-6 {
+    background: white;
+}

@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Middle.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-ExpandedLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('/fonts/bebas/BebasNeuePro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.hero-background {
+    background: linear-gradient(0deg, #B003B1 0%, #B003B1 100%),
+        linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.22) 54.4%, rgba(17, 17, 17, 0.40) 100%),
+        linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.54) 54.4%, #111 100%),
+        url('images/hero.jpeg') lightgray 50% / cover no-repeat;
+    background-blend-mode: hue, multiply, multiply, normal;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.gradient-bg-1 {
+    background: linear-gradient(to right, white 16.7%, transparent 16.7%);
+}
+
+.gradient-bg-2 {
+    background: linear-gradient(to right, white 33.4%, transparent 33.4%);
+}
+
+.gradient-bg-3 {
+    background: linear-gradient(to right, white 50.1%, transparent 50.1%);
+}
+
+.gradient-bg-4 {
+    background: linear-gradient(to right, white 66.8%, transparent 66.8%);
+}
+
+.gradient-bg-5 {
+    background: linear-gradient(to right, white 83.5%, transparent 83.5%);
+}
+
+.gradient-bg-6 {
+    background: white;
+}
+
+.carousel-item.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.slide-1.clipped-section {
+    background: linear-gradient(to right, white 16.67%, black 16.67% 100%);
+}
+
+.slide-2.clipped-section {
+    background: linear-gradient(to right, white 30.33%, black 30.33% 100%);
+}
+
+.slide-3.clipped-section {
+    background: linear-gradient(to right, white 50%, black 50% 100%);
+}
+
+.slide-4.clipped-section {
+    background: linear-gradient(to right, white 66.67%, black 66.67% 100%);
+}
+
+.slide-5.clipped-section {
+    background: linear-gradient(to right, white 83.35%, black 83.35% 100%);
+}
+
+.slide-6.clipped-section {
+    background: linear-gradient(to right, white 100%, black 100% 100%);
+}
+
+.difference-blend-mode {
+    mix-blend-mode: difference !important;
+}
+
+/* Tablet devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slide-1.clipped-inner {
+        background: linear-gradient(to right, white 15.5%, black 15.5% 100%);
+    }
+
+    .slide-2.clipped-inner {
+        background: linear-gradient(to right, white 36.2%, black 36.2% 100%);
+    }
+
+    .slide-3.clipped-inner {
+        background: linear-gradient(to right, white 65.6%, black 65.6% 100%);
+    }
+
+    .slide-4.clipped-inner {
+        background: linear-gradient(to right, white 90.55%, black 90.55% 100%);
+    }
+
+    .slide-5.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+
+    .slide-6.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+}
+
+/* Desktop devices (1024px and up) */
+@media (min-width: 1024px) {
+
+    .slide-1.clipped-inner {
+        background: linear-gradient(to right, white 28%, black 28% 100%);
+    }
+
+    .slide-2.clipped-inner {
+        background: linear-gradient(to right, white 66.6%, black 66.6% 100%);
+    }
+
+    .slide-3.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+
+    .slide-4.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+
+    .slide-5.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+
+    .slide-6.clipped-inner {
+        background: linear-gradient(to right, white 100%, black 100% 100%);
+    }
+}
