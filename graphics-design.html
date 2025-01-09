@@ -35,7 +35,7 @@
     <!-- Existing styles and scripts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="marketting.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/mediaquery.css">
@@ -122,12 +122,14 @@
             </div>
 
             <!-- Main Content -->
-            <div class="text-center justify-center text-white px-4 z-10">
-                <h1 class="text-7xl font-light leading-tight mb-6 bg-clip-text max-w-[340px] md:max-w-3xl text-transparent p-[1px]"
+            <div class="w-full text-white px-4 z-10">
+                <div class="head-div">
+                    <h1 class="text-7xl font-light leading-tight mb-6 bg-clip-text headertitle text-transparent p-[1px]"
                     style="background-image: linear-gradient(180deg, #FFFFFF 10%, #690479 150%);">
                     Stand Out From the Crowd
                 </h1>
-                <p class="md:text-2xl text-lg font-light mb-8">
+                </div>
+                <p class="md:text-2xl text-center mt-3 text-lg font-light mb-8">
                     With brand Identity, Knock down your competition
                 </p>
             </div>
@@ -136,20 +138,16 @@
     <main>
         <section class="section2">
             <h2 id="text3">Your looks are everything!</h2>
-            <p id="text4">People are attracted first to what your brand looks like.  So they<br>either look twice or
-                scroll past you like yesterday's news
+            <p id="text4">People are attracted first to what your brand looks like.  So they either look twice or scroll past you like yesterday's news
             </p>
             <h3 id="contenthead">An eye candy or an eye sore?</h3>
-            <p class="contentbody">Brand identity design is all about visually representing your brand even before
-                <br>your audience gets to know what you're about. It's more like an appetizer before <br> the main
-                course. <br> What do your brand visuals look like? Just a bunch of bland colors and a half- <br>baked
-                logo design? <strong>Or stunning designs that scream “take all my money now!"</strong>
+            <p class="contentbody">Brand identity design is all about visually representing your brand even before your audience gets to know what you're about. It's more like an appetizer before the main course. <br> What do your brand visuals look like? Just a bunch of bland colors and a half-baked logo design? <strong>Or stunning designs that scream “take all my money now!"</strong>
             </p>
         </section>
         <section class="section3">
             <img src="images/brand-image.png" alt="brand-image" id="brand-image">
             <div>
-                <p class="text5">Let your designs do the <br class="responsive-break"> talking</p>
+                <p class="text5">Let your designs do the talking</p>
                 <p class="text6">You've said enough, you deserve a break.<br>Enough of the</p>
                 <ul class="list1">
                     <li><i class="fa-regular fa-circle-check"></i>Mixed messaging</li>
@@ -160,7 +158,7 @@
         </section>
         <section class="section3b">
             <div>
-                <p class="text5">Let's give you designs that <br class="responsive-break">will</p>
+                <p class="text50">Let's give you designs that will</p>
                 <p class="text6">You've said enough, you deserve a break.<br>Enough of the</p>
                 <ul class="list1">
                     <li><i class="fa-regular fa-circle-check"></i>Make you stand out</li>
@@ -173,7 +171,7 @@
         </section>
         <section class="section5">
             <div id="section5">
-                <h1 class="text7">Here's what we can <br>do for you</h1>
+                <h1 class="text7">Here's what we can do for you</h1>
                 <p class="text12">Our package comes with an expert team of innovative designers that can handle;</p>
                 <ul class="list1">
                     <li><i class="fa-regular fa-circle-check"></i>Develop a strong online brand presence</li>
@@ -190,7 +188,7 @@
         <section class="section4">
             <img src="images/customer-experience.png" alt="customer-experience" class="customer-experience">
             <div>
-                <p class="text8">Reach the Right<br>Audience and Triple<br>your sales</p>
+                <p class="text8">Reach the Right Audience and Triple your sales</p>
                 <p class="text9">Here's your chance to:</p>
                 <ul class="list1">
                     <li><i class="fa-regular fa-circle-check"></i>Improve your brand positioning and market
@@ -210,7 +208,9 @@
             <img src="images/Ellipse 6.png" alt="blue-ellipse" class="blue-ellipse">
             <img src="images/Ellipse 5.png" alt="red-ellipse" class="red-ellipse">
             <div class="container2">
-                <p class="text11">Let's give your audience a reason to stay.<br>Hit the button below to get started:</p>
+                <div class="flex justify-center items-center">
+                    <p class="text11">Let's give your audience a reason to stay. Hit the button below to get started:</p>
+                </div>
                 <div class="transparent div2">
                     <button class="btn1" onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })">I Want My Brand to Stand Out</button>
                 </div>

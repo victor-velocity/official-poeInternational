@@ -692,6 +692,10 @@ video {
   left: 20%;
 }
 
+.left-\[3\%\] {
+  left: 3%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -877,6 +881,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -911,6 +919,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .max-w-2xl {
@@ -975,6 +987,18 @@ video {
 
 .max-w-\[340px\] {
   max-width: 340px;
+}
+
+.max-w-\[170px\] {
+  max-width: 170px;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-\[40px\] {
+  max-width: 40px;
 }
 
 .flex-shrink-0 {
@@ -1424,6 +1448,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-\[6rem\] {
   padding-bottom: 6rem;
 }
@@ -1552,6 +1581,14 @@ video {
 
 .text-\[27px\] {
   font-size: 27px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-\[38px\] {
+  font-size: 38px;
 }
 
 .font-bold {
@@ -2154,6 +2191,18 @@ video {
     max-width: 48rem;
   }
 
+  .md\:max-w-\[200px\] {
+    max-width: 200px;
+  }
+
+  .md\:max-w-\[40px\] {
+    max-width: 40px;
+  }
+
+  .md\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2211,6 +2260,11 @@ video {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:text-2xl {
@@ -2324,6 +2378,10 @@ video {
 
   .md\:text-\[28px\] {
     font-size: 28px;
+  }
+
+  .md\:text-\[56px\] {
+    font-size: 56px;
   }
 
   .md\:leading-\[5\.5rem\] {

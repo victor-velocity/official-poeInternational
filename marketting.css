@@ -225,7 +225,6 @@ textarea {
 
   /* Adjust button sizing */
   button {
-    width: 100%;
     margin-top: 1rem;
   }
 
@@ -332,7 +331,6 @@ textarea {
 }
 
 .section8 {
-  width: 100%;
   height: auto;
   background-color: rgba(0, 2, 8, 1);
   color: white;
@@ -354,7 +352,6 @@ textarea {
   left: 0;
   bottom: 0;
   z-index: 4;
-  height: 100vh;
 }
 
 .text11 {
@@ -386,4 +383,10 @@ textarea {
 
 .container2 {
   z-index: 89;
+}
+
+@media (max-width: 768px) {
+  .red-ellipse {
+    height: 100vh;
+  }
 }
