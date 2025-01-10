@@ -115,14 +115,14 @@
 </head>
 
 <body>
-    <section class="px-0 scroll-animate fade-in">
+    <section class="px-0 scroll-animate fade-in z-20">
         <div style="background-image: url('images/bg-gradient.png'); background-position: right; background-repeat: no-repeat; background-size: cover;"
-            class="min-h-screen flex flex-col justify-center items-center relative overflow px-4">
+            class=" min-h-screen flex flex-col justify-center items-center relative overflow-hidden px-5 m-0">
             <!-- Logo Section - Adjusted position and styling -->
-            <div class="flex justify-center items-center mb-10">
+            <div class="top-8 mb-20 md:mb-24 w-full flex justify-center items-center">
                 <a href="index.html">
                     <img src="images/logo-pres-white.png" alt="Poe International Digital Marketing Agency Logo"
-                        loading="eager" width="200" height="60">
+                        loading="eager" width="210" height="60">
                 </a>
             </div>
 
@@ -135,26 +135,26 @@
                 <img src="images/icons/yellow.png" alt="Yellow Icon" width="64px">
             </div>
             <div class="absolute bottom-[10%] md:top-[20%] right-[30%] animate-float     opacity-80">
-                <img src="images/icons/instagram.png" alt="Yellow Icon" width="64px">
+                <img src="images/icons/instagram.png" alt="Instagram Icon" width="74px">
             </div>
             <div class="absolute bottom-[40%] md:bottom-[15%] md:right-[20%] right-[10%] animate-float">
                 <img src="images/icons/redheart.png" alt="Heart Icon" class="w-20 md:w-[180px]">
             </div>
-            <div class="absolute -bottom-10 left-[10%] animate-float-delayed">
-                <img src="images/icons/youtube.png" alt="YouTube" class="md:w-32 w-24 z-20 md:h-32 blur-sm">
-            </div>
+            <div class="absolute -bottom-10 left-[10%] animate-float-delayed z-30">
+                <img src="images/icons/youtube.png" alt="YouTube" class="md:w-32 w-24 z-80 md:h-32 blur-sm">
+            </div>>
 
             <!-- Main Content -->
-            <div class="text-center text-white max-w-4xl px-4 z-10">
-                <h1 class="text-7xl font-light leading-tight mb-6 bg-clip-text text-transparent p-[1px]"
+            <div class="text-center text-white md:max-w-4xl z-10">
+                <h1 class="lg:text-[5rem] lg:max-w-4xl md:text-6xl md:max-w-2xl text-4xl font-light leading-tight pb-6 bg-clip-text text-transparent p-[1px]"
                     style="background-image: linear-gradient(180deg, #FFFFFF 10%, #690479 150%);">
                     10x your profit and get ahead of the game!
                 </h1>
-                <p class="md:text-2xl text-lg font-light mb-8">
+                <p class="lg:text-2xl md:text-lg font-light mb-8">
                     with Social Media/Digital marketing strategies that works
                 </p>
                 <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-                    class="px-8 md:text-xl w-auto mt-4 py-4 bg-[#A693FA26]/15 border border-white/30 hover:bg-white/20 font-extralight text-white rounded-full hover:opacity-90 transition duration-300">
+                    class="px-8 py-4 mt-6 md:text-xl bg-white/10 border-2 border-white/30 hover:bg-white/20 text-white rounded-full transition duration-300 backdrop-blur-sm">
                     Book a free consultation
                 </button>
             </div>
@@ -162,44 +162,40 @@
     </section>
 
     <!-- Second Section -->
-    <section class="bg-white py-16 text-center">
-        <h2 class="md:text-6xl py-4 text-3xl font-bold mb-8 bg-clip-text text-transparent"
-            style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.65) 0%, rgba(0, 56, 191, 0.65) 100%);">
-            Many businesses have one<br /> similar goal in mind...
+    <section class="bg-white py-20 px-5 text-center">
+        <h2 class="pb-8 lg:max-w-[740px] md:max-w-lg text-3xl md:text-[2.5rem] lg:text-5xl font-semibold bg-clip-text text-transparent"
+            style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.65) 0%, rgba(0, 56, 191, 0.65) 100%); margin: 0px auto;">
+            Many businesses have one similar goal in mind...
         </h2>
-        <p class="text-gray-700 font-light text-xl mb-6 max-w-2xl mx-auto">
+        <p class="text-gray-700 font-light   text-lg md:text-xl pb-6 max-w-2xl mx-auto">
             To make money, lots of it, and just like you they are out there working hard to make it happen.
         </p>
-        <p class="text-gray-700 font-light text-xl mb-6 max-w-2xl mx-auto">
+        <p class="text-gray-700 font-light text-lg md:text-xl pb-6 max-w-2xl mx-auto">
             The only difference is while they may still be in search of a lasting solution, you have found one - Us.
         </p>
-        <p class="text-gray-700 font-light text-xl mb-8 max-w-2xl mx-auto">
+        <p class="text-gray-700 font-light text-lg md:text-xl pb-8 max-w-2xl mx-auto">
             We can transform your social media into a honeypot that'll attract sales to you like bees to honey.
         </p>
         <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-            class="px-8 md:text-2xl w-auto mt-4 py-4 bg-[#A693FA26]/15 border border-gray-400 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+            class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-gray-400 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
             Book a free consultation
         </button>
     </section>
 
     <!-- Third Section - Saleslessness -->
-    <section class="bg-gray-50 px-0 scroll-animate fade-in">
-        <div class=" mx-auto">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <!-- Left side - Image -->
-                <div class="w-full md:w-1/2 h-auto">
-                    <!-- Main phone image -->
-                    <img src="images/phone.jpeg" alt="Social Media Management" class="w-full h-[460px] md:h-[600px]">
-                </div>
-
+    <section class="bg-gray-50 px-0 pb-20 md:pb-0 scroll-animate fade-in">
+        <div>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Main phone image -->
+                <img src="images/phone.jpeg" alt="Social Media Management" class="w-full md:w-1/2 md:h-[630px] h-auto pb-20 md:pb-0 object-cover">
                 <!-- Right side - Content -->
-                <div class="w-full md:w-1/2 px-6">
-                    <h2 class="md:text-[40px] text-3xl font-semibold mb-6 bg-clip-text text-transparent"
-                        style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.85) 0%, rgba(0, 56, 191, 0.65) 100%); line-height: 40px;">
-                        Your one-way ticket out of <br> out SALESLESSNESS
+                <div class="w-full md:w-1/2 px-5">
+                    <h2 class="text-3xl xl:text-[2.7rem] lg:text-4xl lg:max-w-[500px] md:text-[2.1rem] font-semibold mb-8 bg-clip-text text-transparent"
+                        style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.85) 0%, rgba(0, 56, 191, 0.65) 100%); line-height: 50px;">
+                        Your one-way ticket out of out SALESLESSNESS
                     </h2>
 
-                    <p class="text-gray-700 font-light text-lg mb-8">
+                    <p class="text-gray-700 font-light text-lg md:text-xl mb-6">
                         Social media, when managed well, can amplify your brand and attract endless opportunities.
                         With a limitless audience, it can take your business from obscurity to the spotlight.
                         Our unbeatable strategies ensure success.
@@ -209,38 +205,38 @@
                     <div class="space-y-4 mb-8">
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-6 h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Increase brand visibility</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Increase brand visibility</span>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-6 h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Increase conversion rates up to 10X and</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Increase conversion rates up to 10X and</span>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-6 h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Sell like crazy</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Sell like crazy</span>
                         </div>
                     </div>
                     <button
@@ -255,81 +251,81 @@
 
     <!-- Fourth Section - What We Can Do -->
     <section class="relative" style="background: linear-gradient(132.89deg, #580073 -11.83%, #0A0029 82.76%);">
-        <div class="container mx-auto px-4 py-20">
-            <h2 class="md:text-7xl text-4xl font-light mb-16 bg-clip-text text-transparent"
-                style="background-image: linear-gradient(146.4deg, #FFFFFF 14.85%, #42285D 76.83%);">
-                Here's what we can<br /> do for you
+        <div class="px-5 py-20">
+            <h2 class="text-3xl lg:text-6xl md:text-4xl md:max-w-sm lg:max-w-xl font-light pb-8 bg-clip-text text-transparent"
+                style="background-image: linear-gradient(146.4deg, #FFFFFF 14.85%, #42285D 76.83%); line-height: 70px;">
+                Here's what we can do for you
             </h2>
 
             <!-- Service List -->
-            <div class="space-y-6 max-w-3xl">
+            <div class="space-y-4 mb-8 max-w-3xl">
                 <!-- Service Item 1 -->
                 <div class="flex items-center gap-4">
-                    <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                    <div class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <span class="text-white/80 text-lg font-light">Develop a strong online brand presence</span>
+                    <span class="text-white/80 font-light lg:text-lg">Develop a strong online brand presence</span>
                 </div>
 
                 <!-- Service Item 2 -->
                 <div class="flex items-center gap-4">
-                    <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                    <div class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <span class="text-white/80 text-lg font-light">Craft a compelling brand story that highlights your
+                    <span class="text-white/80 font-light lg:text-lg">Craft a compelling brand story that highlights your
                         unique value
                         proposition</span>
                 </div>
 
                 <!-- Service Item 3 -->
                 <div class="flex items-center gap-4">
-                    <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                    <div class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <span class="text-white/80 text-lg font-light">Set up and optimize your social media accounts for
+                    <span class="text-white/80 font-light lg:text-lg">Set up and optimize your social media accounts for
                         growth,
                         visibility and conversion</span>
                 </div>
 
                 <!-- Service Item 4 -->
                 <div class="flex items-center gap-4">
-                    <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                    <div class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <span class="text-white/80 text-lg font-light">Drive engagement and conversions with a content
+                    <span class="text-white/80 font-light lg:text-lg">Drive engagement and conversions with a content
                         strategy that
                         works</span>
                 </div>
 
                 <!-- Service Item 5 -->
                 <div class="flex items-center gap-4">
-                    <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                    <div class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <span class="text-white/80 text-lg font-light">Understand and track your social media
+                    <span class="text-white/80 font-light lg:text-lg">Understand and track your social media
                         analytics</span>
                 </div>
             </div>
 
             <!-- CTA Button -->
-            <div class="mt-12">
+            <div>
                 <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-                    class="px-8 md:text-xl py-4 bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
+                    class="px-8 py-4 md:text-xl bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
                     Book a free consultation
                 </button>
             </div>
@@ -339,20 +335,18 @@
     <!-- Fifth Section - Get with the team -->
     <section class="bg-gradient-to-br px-0 from-white via-white to-[#D149FF66]/40 scroll-animate fade-in">
         <div class=" mx-auto pl-0 ml-0">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="flex flex-col md:flex-row items-center justify-between">
                 <!-- Left side - Image -->
-                <div class="w-full md:w-1/2">
-                    <img src="images/genz.jpeg" alt="Digital Marketing Team" class="w-full h-[460px] md:h-[660px]">
-                </div>
+                <img src="images/genz.jpeg" alt="Digital Marketing Team" class="w-full md:w-1/2 md:h-[630px] object-cover">
 
                 <!-- Right side - Content -->
-                <div class="w-full md:w-1/2 px-6">
-                    <h2 class="md:text-[53px] leading-none text-4xl py-3 font-light mb-6 bg-gradient-to-r bg-clip-text text-transparent"
-                        style="background-image: linear-gradient(146.4deg, #C10294 14.85%, #42285D 76.83%);">
-                        Get with the team<br /> that gets you
+                <div class="w-full md:w-1/2 md:py-0 py-20 px-5">
+                    <h2 class="md:text-[2.5rem] text-3xl lg:text-[3.6rem] font-light pb-8 pt-3 bg-gradient-to-r bg-clip-text text-transparent"
+                        style="background-image: linear-gradient(146.4deg, #C10294 14.85%, #42285D 76.83%); line-height: 1;">
+                        Get with the team that gets you
                     </h2>
 
-                    <p class="text-gray-700 text-lg font-light mb-8">
+                    <p class="text-gray-700 text-lg md:text-xl font-light mb-6">
                         With our digital marketing team you can turn the tables around and get your customers running
                         towards you with their money.
                     </p>
@@ -360,53 +354,57 @@
                     <!-- Services List -->
                     <div class="space-y-4 mb-8">
                         <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                            <div
+                                class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Social Media Marketing</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Social Media Marketing</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                            <div
+                                class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Email Marketing</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Email Marketing</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                            <div
+                                class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">SEO and Content Marketing</span>
+                            <span class="text-gray-700 font-light lg:text-lg">SEO and Content Marketing</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                            <div
+                                class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-light">Leads Generation</span>
+                            <span class="text-gray-700 font-light lg:text-lg">Leads Generation</span>
                         </div>
                     </div>
 
                     <button
                         onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-                        class="px-8 py-4 mt-10 md:text-xl bg-[#A693FA26]/15 border border-[#A693FA26] hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                        class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-[#A693FA26] hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
                         Book a free consultation
                     </button>
                 </div>
@@ -415,10 +413,10 @@
     </section>
 
     <!-- How We Work Section -->
-    <section class="relative py-20 overflow-hidden scroll-animate fade-in"
+    <section class="relative py-20 px-5 overflow-hidden scroll-animate fade-in"
         style="background: linear-gradient(180deg, #2D1538 0%, #0F0628 100%);">
-        <div class="container mx-auto px-4">
-            <h2 class="md:text-7xl py-2 text-4xl font-light mb-16 bg-clip-text text-white md:text-transparent"
+        <div>
+            <h2 class="md:text-[2.5rem] lg:text-6xl text-3xl font-light pb-8 bg-clip-text text-transparent md:text-transparent"
                 style="background-image: linear-gradient(99.68deg, #FFEFFB 17.96%, #42285D 92.04%);">
                 How we work our magic
             </h2>
@@ -432,27 +430,27 @@
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">We can help you research and curate high-quality,
+                                <p class="text-white/80 font-light lg:text-lg">We can help you research and curate high-quality,
                                     industry-relevant
                                     content to reinforce brand positioning</p>
                             </div>
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop a strategic content calendar for consistent
+                                <p class="text-white/80 font-light lg:text-lg">Develop a strategic content calendar for consistent
                                     engagement
                                 </p>
                             </div>
@@ -466,14 +464,14 @@
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop a tailored social media strategy to
+                                <p class="text-white/80 font-light lg:text-lg">Develop a tailored social media strategy to
                                     amplify
                                     your
                                     brand's
@@ -481,14 +479,14 @@
                             </div>
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Execute targeted ad campaigns and growth hacks
+                                <p class="text-white/80 font-light lg:text-lg">Execute targeted ad campaigns and growth hacks
                                     to
                                     boost reach,
                                     engagement, and sales</p>
@@ -503,28 +501,28 @@
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Design visually stunning graphics to captivate
+                                <p class="text-white/80 font-light lg:text-lg">Design visually stunning graphics to captivate
                                     your
                                     audience
                                 </p>
                             </div>
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Create compelling video ads that drive
+                                <p class="text-white/80 font-light lg:text-lg">Create compelling video ads that drive
                                     conversions
                                 </p>
                             </div>
@@ -538,28 +536,28 @@
                         <div class="space-y-4">
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop and optimize your website for seamless
+                                <p class="text-white/80 font-light lg:text-lg">Develop and optimize your website for seamless
                                     user
                                     experience
                                 </p>
                             </div>
                             <div class="flex items-start gap-3">
                                 <div
-                                    class="w-6 h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-white/30 flex-shrink-0 flex items-center justify-center mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p class="text-white/80 font-light">Develop targeted email campaigns to nurture
+                                <p class="text-white/80 font-light lg:text-lg">Develop targeted email campaigns to nurture
                                     leads
                                     and
                                     boost
@@ -569,15 +567,11 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Carousel Container -->
-
-
                 <!-- CTA Button -->
-                <div class="mt-12">
+                <div class="mt-8">
                     <button
                         onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
-                        class="px-8 md:text-xl py-4 bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
+                        class="px-8 py-4 md:text-xl bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
                         Book a free consultation
                     </button>
                 </div>
@@ -585,16 +579,15 @@
     </section>
 
     <!-- Consultation Form Section -->
-    <section id="consultation-form" class="py-20 relative scroll-animate fade-in"
+    <section id="consultation-form" class="py-20 px-5 relative scroll-animate fade-in"
         style="background: linear-gradient(135deg, #FFF1FF 0%, #F5F8FF 100%);">
-        <div class="container mx-auto px-4">
-            <h2
-                class="md:text-6xl text-4xl tracking-tighter text-center mb-16 bg-gradient-to-r from-blue-500 font-extralight to-purple-800 bg-clip-text text-transparent">
+        <div>
+            <h2 class="md:text-[2.5rem] lg:text-6xl text-[2rem] tracking-tighter font-light text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-800 bg-clip-text text-transparent">
                 Let's have a free consultation call
             </h2>
 
             <!-- Form Container -->
-            <div class="max-w-xl mx-auto px-4">
+            <div class="max-w-xl mx-auto">
                 <form id="consultationForm" class="space-y-6" action="process_form.php" method="POST">
                     <!-- Name Input -->
                     <div>
@@ -618,9 +611,9 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <div class="flex w-full justify-center mt-8">
+                    <div class="flex justify-center mt-8">
                         <button type="submit"
-                            class="px-8 md:text-xl py-4 mt-4 bg-[#A693FA26]/15 border border-purple-600/30 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                            class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-purple-600/30 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
                             Book a free consultation
                         </button>
                     </div>

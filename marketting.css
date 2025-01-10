@@ -158,74 +158,11 @@ textarea {
   padding: 1rem 0;
 }
 
-/* Add responsive styles */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 4rem !important;
-  }
-
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem !important;
-  }
-
-  .text-2xl {
-    font-size: 1.25rem;
-  }
-
-  /* Adjust social media icons positioning */
-  .absolute.top-1\/4 {
-    top: 15%;
-    left: 5%;
-  }
-
-  .absolute.top-1\/3 {
-    top: 25%;
-    right: 5%;
-  }
-
-  .absolute.bottom-1\/4 {
-    bottom: 15%;
-    right: 10%;
-  }
-
-  /* Adjust section spacing */
-  section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  /* Make flex columns stack on mobile */
-  .flex-col-mobile {
-    flex-direction: column;
-  }
-
-  /* Adjust image containers */
-  .w-full.md\:w-1\/2 {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  /* Center align text on mobile */
-  .text-center-mobile {
-    text-align: center;
-  }
-}
-
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem !important;
-  }
 
   /* Adjust button sizing */
   button {
-    margin-top: 1rem;
+    width: 100%;
   }
 
   /* Adjust carousel */
