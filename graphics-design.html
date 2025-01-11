@@ -92,14 +92,14 @@
 
 
 <body>
-    <section class="px-0 scroll-animate fade-in">
+    <section class="scroll-animate fade-in z-20">
         <div style="background-image: url('images/bg-gradient.png'); background-position: right; background-repeat: no-repeat; background-size: cover;"
-            class=" min-h-screen flex flex-col justify-center items-center relative overflow px-4">
+            class=" min-h-screen flex flex-col justify-center items-center relative overflow-hidden px-5 m-0">
             <!-- Logo Section - Adjusted position and styling -->
-            <div class="flex justify-center items-center mb-10">
+            <div class="top-8 mb-20 md:mb-24 w-full flex justify-center items-center">
                 <a href="index.html">
                     <img src="images/logo-pres-white.png" alt="Poe International Digital Marketing Agency Logo"
-                        loading="eager" width="200" height="60">
+                        loading="eager" width="210" height="60">
                 </a>
             </div>
 
@@ -112,95 +112,378 @@
                 <img src="images/icons/yellow.png" alt="Yellow Icon" width="64px">
             </div>
             <div class="absolute bottom-[10%] md:top-[20%] right-[30%] animate-float     opacity-80">
-                <img src="images/icons/instagram.png" alt="Yellow Icon" width="64px">
+                <img src="images/icons/instagram.png" alt="Instagram Icon" width="74px">
             </div>
             <div class="absolute bottom-[40%] md:bottom-[15%] md:right-[20%] right-[10%] animate-float">
                 <img src="images/icons/redheart.png" alt="Heart Icon" class="w-20 md:w-[180px]">
             </div>
-            <div class="absolute -bottom-10 left-[10%] animate-float-delayed">
-                <img src="images/icons/youtube.png" alt="YouTube" class="md:w-32 w-24 z-20 md:h-32 blur-sm">
-            </div>
+            <div class="absolute -bottom-10 left-[10%] animate-float-delayed z-30">
+                <img src="images/icons/youtube.png" alt="YouTube" class="md:w-32 w-24 z-80 md:h-32 blur-sm">
+            </div>>
 
             <!-- Main Content -->
-            <div class="w-full text-white px-4 z-10">
-                <div class="head-div">
-                    <h1 class="text-7xl font-light leading-tight mb-6 bg-clip-text headertitle text-transparent p-[1px]"
-                    style="background-image: linear-gradient(180deg, #FFFFFF 10%, #690479 150%);">
+            <div class="text-center text-white md:max-w-4xl z-10">
+                <h1 class="lg:text-8xl lg:max-w-4xl md:text-6xl md:max-w-2xl max-w-[340px] text-5xl font-light leading-tight pb-6 bg-clip-text text-transparent p-[1px]"
+                    style="background-image: linear-gradient(180deg, #FFFFFF 10%, #690479 150%); margin: 0px auto;">
                     Stand Out From the Crowd
                 </h1>
-                </div>
-                <p class="md:text-2xl text-center mt-3 text-lg font-light mb-8">
+                <p class="lg:text-2xl md:text-lg font-light mb-8">
                     With brand Identity, Knock down your competition
                 </p>
+                <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                    class="px-8 py-4 mt-6 md:text-xl bg-white/10 border-2 border-white/30 hover:bg-white/20 text-white rounded-full transition duration-300 backdrop-blur-sm">
+                    Book a free consultation
+                </button>
             </div>
         </div>
     </section>
     <main>
-        <section class="section2">
-            <h2 id="text3">Your looks are everything!</h2>
-            <p id="text4">People are attracted first to what your brand looks like.  So they either look twice or scroll past you like yesterday's news
+        <!-- Second Section -->
+        <section class="bg-white py-20 px-5 text-center">
+            <h2 class="pb-8 xl:text-6xl text-4xl md:text-[2.8rem] lg:text-5xl font-bold bg-clip-text text-transparent"
+                style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.65) 0%, rgba(0, 56, 191, 0.65) 100%); margin: 0px auto;">
+                Your looks are everything!
+            </h2>
+            <p class="text-gray-700 font-light text-lg md:text-xl pb-6 max-w-xl lg:text-2xl lg:max-w-2xl mx-auto">
+                People are attracted first to what your brand looks like.  So they either look twice or scroll
+                past you like yesterday's news
             </p>
-            <h3 id="contenthead">An eye candy or an eye sore?</h3>
-            <p class="contentbody">Brand identity design is all about visually representing your brand even before your audience gets to know what you're about. It's more like an appetizer before the main course. <br> What do your brand visuals look like? Just a bunch of bland colors and a half-baked logo design? <strong>Or stunning designs that scream “take all my money now!"</strong>
+            <h2 class="pb-8 xl:text-5xl text-3xl md:text-[2.5rem] lg:text-4xl font-bold bg-clip-text text-transparent"
+                style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.65) 0%, rgba(0, 56, 191, 0.65) 100%); margin: 0px auto;">
+                An eye candy or an eye sore?
+            </h2>
+            <p class="text-gray-700 font-light text-lg md:text-xl lg:text-2xl lg:max-w-[840px] pb-8 max-w-[720px] mx-auto">
+                Brand identity design is all about visually representing your brand even before your
+                audience gets to know what you're about. It's more like an appetizer before the main course. <br> What
+                do your brand visuals look like? Just a bunch of bland colors and a half-baked logo design? <strong>Or
+                    stunning designs that scream “take all my money now!"
             </p>
+            <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-gray-400 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                Book a free consultation
+            </button>
         </section>
-        <section class="section3">
-            <img src="images/brand-image.png" alt="brand-image" id="brand-image">
-            <div>
-                <p class="text5">Let your designs do the talking</p>
-                <p class="text6">You've said enough, you deserve a break.<br>Enough of the</p>
-                <ul class="list1">
-                    <li><i class="fa-regular fa-circle-check"></i>Mixed messaging</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Inconsistent branding</li>
-                    <li><i class="fa-regular fa-circle-check"></i>and lack of recognition</li>
-                </ul>
+        <!-- Third Section  -->
+        <section class="bg-[#f6f6f6] scroll-animate fade-in">
+            <div class=" mx-auto pl-0 ml-0">
+                <div class="flex flex-col md:flex-row items-center justify-between ">
+                    <!-- Left side - Image -->
+                    <img src="images/brand-image.png" alt="brand-image"
+                        class="w-full md:w-1/2 md:h-[600px] object-cover">
+
+                    <!-- Right side - Content -->
+                    <div class="w-full md:w-1/2 md:py-0 py-20 px-5">
+                        <h2 class="text-3xl lg:text-[43px] lg:max-w-xl pb-8 pt-3 bg-gradient-to-r bg-clip-text text-transparent font-bold"
+                            style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.65) 0%, rgba(0, 56, 191, 0.65) 100%);line-height: 1;">
+                            Let your designs do the talking
+                        </h2>
+
+                        <p class="text-gray-700 max-w-sm text-lg lg:text-xl font-light mb-6">
+                            You've said enough, you deserve a break. Enough of the:
+                        </p>
+                        <!-- Services List -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Mixed messaging</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Inconsistent branding</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">and lack of recognition</span>
+                            </div>
+                        </div>
+
+                        <button
+                            onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                            class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-[#A693FA26] hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                            Book a free consultation
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="section3b">
+
+        <!-- third section -->
+        <section class="bg-gray-50 px-0 pb-20 md:pb-0 scroll-animate fade-in">
             <div>
-                <p class="text50">Let's give you designs that will</p>
-                <p class="text6">You've said enough, you deserve a break.<br>Enough of the</p>
-                <ul class="list1">
-                    <li><i class="fa-regular fa-circle-check"></i>Make you stand out</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Increase brand recognition</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Convey your message in the most compelling way
-                        possible</li>
-                </ul>
+                <div class="flex flex-col-reverse md:flex-row items-center justify-center">
+                    <!-- Left side - Content -->
+                    <div class="w-full md:w-1/2 px-5 md:pl-10">
+                        <h2 class="text-3xl xl:text-[38px] lg:text-4xl lg:max-w-[500px] md:text-[2.1rem] font-bold mb-8 bg-clip-text text-transparent"
+                            style="background-image: linear-gradient(90deg, rgba(202, 0, 69, 0.85) 0%, rgba(0, 56, 191, 0.65) 100%); line-height: 50px;">
+                            Let's give you designs that will
+                        </h2>
+                        <p class="text-gray-700 max-w-sm font-light text-lg lg:text-xl mb-6">
+                            You've said enough, you deserve a break. Enough of the
+                        </p>
+
+                        <!-- Bullet points -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Make you stand out</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Increase brand recognition</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full bg-transparent border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Convey your message in the most
+                                    compelling way
+                                    possible</span>
+                            </div>
+                        </div>
+                        <button
+                            onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                            class="px-8 md:text-xl py-4 bg-[#A693FA26]/15 border border-gray-400 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                            Book a free consultation
+                        </button>
+                    </div>
+                    <!-- Main phone image -->
+                    <img src="images/man-with-speaker.png" alt="man-with-speaker"
+                        class="w-full md:w-1/2 md:h-[600px] h-auto pb-20 md:pb-0 object-cover">
+                </div>
             </div>
-            <img src="images/man-with-speaker.png" alt="man-with-speaker" id="man-with-speaker">
         </section>
-        <section class="section5">
-            <div id="section5">
-                <h1 class="text7">Here's what we can do for you</h1>
-                <p class="text12">Our package comes with an expert team of innovative designers that can handle;</p>
-                <ul class="list1">
-                    <li><i class="fa-regular fa-circle-check"></i>Develop a strong online brand presence</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Craft a compelling brand story that highlights your
-                        unique value proposition</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Set up and optimize your social media accounts for
-                        growth, visibility and conversion</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Set up and optimize your social media accounts for
-                        growth, visibility and conversion</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Understand and track your social media analytics</li>
-                </ul>
+        <!-- What We Can Do -->
+        <section class="relative lg:pl-16"
+            style="background: linear-gradient(132.89deg, #580073 -11.83%, #0A0029 82.76%);">
+            <div class="px-5 py-20">
+                <h2 class="text-3xl lg:text-7xl md:text-4xl md:max-w-sm lg:max-w-2xl font-light pb-8 bg-clip-text text-transparent"
+                    style="background-image: linear-gradient(146.4deg, #FFFFFF 14.85%, #42285D 76.83%);">
+                    Here's what we can do for you
+                </h2>
+
+                <!-- Service List -->
+                <div class="space-y-4 mb-8 max-w-3xl">
+                    <!-- Service Item 1 -->
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white/80 font-light lg:text-lg">Develop a strong online brand presence</span>
+                    </div>
+
+                    <!-- Service Item 2 -->
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white/80 font-light lg:text-lg">Craft a compelling brand story that highlights
+                            your
+                            unique value
+                            proposition</span>
+                    </div>
+
+                    <!-- Service Item 3 -->
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white/80 font-light lg:text-lg">Set up and optimize your social media accounts
+                            for
+                            growth,
+                            visibility and conversion</span>
+                    </div>
+
+                    <!-- Service Item 4 -->
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white/80 font-light lg:text-lg">Drive engagement and conversions with a
+                            content
+                            strategy that
+                            works</span>
+                    </div>
+
+                    <!-- Service Item 5 -->
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="min-w-6 min-h-6 rounded-full border-2 border-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <span class="text-white/80 font-light lg:text-lg">Understand and track your social media
+                            analytics</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div>
+                    <button
+                        onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                        class="px-8 py-4 md:text-xl mt-8    bg-transparent border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition duration-300">
+                        Book a free consultation
+                    </button>
+                </div>
             </div>
         </section>
-        <section class="section4">
-            <img src="images/customer-experience.png" alt="customer-experience" class="customer-experience">
-            <div>
-                <p class="text8">Reach the Right Audience and Triple your sales</p>
-                <p class="text9">Here's your chance to:</p>
-                <ul class="list1">
-                    <li><i class="fa-regular fa-circle-check"></i>Improve your brand positioning and market
-                        competitiveness</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Reach the right audience and enhance marketing efforts
-                    </li>
-                    <li><i class="fa-regular fa-circle-check"></i>Increase customer retention</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Triple brand awareness</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Establish brand relevance</li>
-                </ul>
-                <div class="transparent div2" id="div2">
-                    <button onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })" class="btn2">Book a free consultation</button>
+        <!-- Get with the team -->
+        <section class="bg-gradient-to-br px-0 from-white via-white to-[#D149FF66]/40 scroll-animate fade-in">
+            <div class=" mx-auto pl-0 ml-0">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <!-- Left side - Image -->
+                    <img src="images/customer-experience.png" alt="Digital Marketing Team"
+                        class="w-full md:w-1/2 md:h-[700px] object-cover">
+
+                    <!-- Right side - Content -->
+                    <div class="w-full md:w-1/2 md:py-0 py-20 px-5">
+                        <h2 class="md:text-[2.5rem] text-3xl lg:text-[3.3rem] lg:max-w-[500px] font-light pb-8 pt-3 bg-gradient-to-r bg-clip-text text-transparent"
+                            style="background-image: linear-gradient(146.4deg, #C10294 14.85%, #42285D 76.83%); line-height: 1;">
+                            Reach the Right Audience and Triple your sales
+                        </h2>
+
+                        <p class="text-gray-700 text-lg md:text-xl font-light mb-6">
+                            Here's your chance to:
+                        </p>
+
+                        <!-- Services List -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Improve your brand positioning and
+                                    market
+                                    competitiveness</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Reach the right audience and enhance
+                                    marketing efforts</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Increase customer retention</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Triple brand awareness</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="min-w-6 min-h-6 rounded-full border-2 border-gray-700 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-light lg:text-lg">Establish brand relevance</span>
+                            </div>
+                        </div>
+
+                        <button
+                            onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })"
+                            class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-[#A693FA26] hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                            Book a free consultation
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -209,24 +492,27 @@
             <img src="images/Ellipse 5.png" alt="red-ellipse" class="red-ellipse">
             <div class="container2">
                 <div class="flex justify-center items-center">
-                    <p class="text11">Let's give your audience a reason to stay. Hit the button below to get started:</p>
+                    <p class="text11 lg:max-w-[960px]">Let's give your audience a reason to stay. Hit the button below
+                        to get started:</p>
                 </div>
                 <div class="transparent div2">
-                    <button class="btn1" onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })">I Want My Brand to Stand Out</button>
+                    <button class="btn1"
+                        onclick="document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' })">I
+                        Want My Brand to Stand Out</button>
                 </div>
             </div>
         </section>
         <!-- Consultation Form Section -->
-        <section id="consultation-form" class="py-20 relative scroll-animate fade-in"
+        <section id="consultation-form" class="py-20 px-5 relative scroll-animate fade-in"
             style="background: linear-gradient(135deg, #FFF1FF 0%, #F5F8FF 100%);">
-            <div class="container mx-auto px-4">
+            <div>
                 <h2
-                    class="md:text-6xl text-4xl tracking-tighter font-light text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-800 bg-clip-text text-transparent">
+                    class="md:text-[2.5rem] lg:text-6xl text-[2rem] tracking-tighter font-light text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-800 bg-clip-text text-transparent">
                     Let's have a free consultation call
                 </h2>
 
                 <!-- Form Container -->
-                <div class="max-w-xl mx-auto px-4">
+                <div class="max-w-xl mx-auto">
                     <form id="consultationForm" class="space-y-6" action="process_form.php" method="POST">
                         <!-- Name Input -->
                         <div>
@@ -252,7 +538,7 @@
                         <!-- Submit Button -->
                         <div class="flex justify-center mt-8">
                             <button type="submit"
-                                class="px-8 md:text-xl py-4 mt-4 bg-[#A693FA26]/15 border border-purple-600/30 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
+                                class="px-8 py-4 md:text-xl bg-[#A693FA26]/15 border border-purple-600/30 hover:bg-[#A693FA26]/40 font-extralight text-black rounded-full hover:opacity-90 transition duration-300">
                                 Book a free consultation
                             </button>
                         </div>
@@ -265,6 +551,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 

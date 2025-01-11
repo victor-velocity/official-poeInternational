@@ -1,115 +1,10 @@
-@media (max-width: 700px) {
-
-  .text1 {
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 40px;
-  }
-
-  #text2 {
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .btn1,
-  .btn2 {
-    font-size: 18px;
-  }
-
-  #contenthead {
-    font-size: 28px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  #text3 {
-    font-size: 31px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  #text4,
-  .contentbody {
-    font-size: 16px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .section3,
-  .section4 {
-    grid-template-columns: 1fr;
-  }
-
-  .section3b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-
-  .section3b > div,
-  .section4 > div {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-  }
-
-  .section3 > div {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-  }
-
-  #brand-image,
-  .customer-experience,
-  #man-with-speaker {
-    width: 100vw;
-    height: 360px !important;
-  }
-
-  .text5 {
-    font-size: 27px;
-    width: 100%;
-    letter-spacing: 0px;
-  }
-
-  .list1 > li {
-    font-size: 14px;
-  }
-  .text6,
-  .text9 {
-    width: auto;
-  }
-
-  .text7 {
-    font-size: 31.9px;
-    line-height: 40px;
-  }
-
-  .text12 {
-    font-size: 18px;
-  }
-
-  .text8 {
-    font-size: 35px;
-    line-height: 45px;
-    max-width: 100%;
-  }
-
-  .section7 {
-    padding-bottom: 5px;
-    padding-top: 40px;
-  }
-
+@media (max-width: 768px) {
   .text11 {
     font-size: 30px;
     margin-right: 10px;
     line-height: 45px;
     margin-left: 10px;
-    max-width: 530px;
+    max-width: 500px;
   }
 
   .container2 {
@@ -117,117 +12,16 @@
     padding-top: 60px;
   }
 
-  #section5 {
-    width: 100%;
-  }
-
   .btn1 {
     padding: 20px;
     font-size: 18px;
-  }
-
-  .headertitle {
-    max-width: 360px;
-  }
+ }
 }
 
-@media (min-width: 550px) and (max-width: 700px) {
-  .text1 {
-    font-size: 60px;
-    line-height: 70px;
-    padding-bottom: 10px;
-  }
-
-  #text3,
-  .text5,
-  .text7,
-  .text8,
-  #text10 {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .responsive-break {
-    display: none;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 700px) {
-  #brand-image,
-  .customer-experience,
-  #man-with-speaker {
-    width: 100vw;
-    height: 450px !important;
-  }
-}
-
-@media (min-width: 701px) and (max-width: 980px) {
-  .text6,
-  .text9 {
-    width: auto;
-    margin-right: 15px;
-  }
-
-  .text1 {
-    font-size: 70px;
-  }
-
-  #text3 {
-    font-size: 46px;
-  }
-
-  #contenthead {
-    font-size: 44px;
-  }
-
-  #text4,
-  .contentbody {
-    font-size: 19px;
-  }
-
-  .text5 {
-    font-size: 30px;
-  }
-
-  .text6 {
-    font-size: 15px;
-  }
-
-  .section3b > div,
-  .section4 > div {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-  }
-
-  .btn2 {
-    font-size: 17px;
-  }
-
-  #div2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .list1 > li {
-    font-size: 14px;
-  }
-
-  .text7 {
-    font-size: 60px;
-    line-height: 80px;
-  }
-
+@media (min-width: 768px) and (max-width: 980px) {
   .text11 {
     font-size: 40px;
     line-height: 40px;
-    max-width: 700px;
-  }
-
-  .text8 {
-    font-size: 40px;
-    line-height: 40px;
-    max-width: 340px;
+    max-width: 640px;
   }
 }
