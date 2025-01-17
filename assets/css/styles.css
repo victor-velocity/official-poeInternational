@@ -6,7 +6,6 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
-  padding: 90px 20px;
 }
 
 .blue-ellipse {
@@ -20,12 +19,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  top: 0;
   z-index: 4;
+  min-height: 640px;
 }
 
 .text11 {
-  font-family: "Visby Round Bold";
   font-size: 58px;
   font-weight: 300;
   line-height: 66.22px;
@@ -69,7 +67,6 @@
 }
 
 .div2 {
-  margin-top: 90px;
-  margin-bottom: 20px;
+  margin-top: 50px;
   z-index: 100;
 }
